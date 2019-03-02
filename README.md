@@ -7,11 +7,12 @@ This repo is an application using ML function to do classification on images and
 Build an application that uses deep learning to detect skin cancer and based on probablitiy will connect or recommend a doctor to see.  For example, if it is high priority, recommend nearby dermotolgist.  if not, a general practicioner.  Also, the app should include videos based on the resutls to educate the user.
 For AI models, please research few models already implemented by researchers and are open sourced and use them.
 
-## User Story & Teches may Cover
+## User Story
 - As a doctor, I want an application help me check my patient's skin condition.
 - As a researcher, I need an application help me store my patient's data.
 - As a patient, I want an application to monitor my treatment progress.
 
+## Teches may Cover
 - Interface should be brief, clean and easy to use
 - There may be a button for sending results directly to user or wait until results show up on webpage
 - Map API may be added after diagnoized to show hospitals around.
@@ -19,7 +20,7 @@ For AI models, please research few models already implemented by researchers and
 - The web page will connect to the MongoDB database to save patient's data.
 
 ## Modules May Include
-
+![image](https://github.com/ec500-software-engineering/project-skin-cancer-detection-team1/blob/master/Flowchart.png)
 
 ## Datasets
 Kaggle: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
