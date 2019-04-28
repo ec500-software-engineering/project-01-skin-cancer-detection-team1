@@ -4,8 +4,14 @@ An web application aiming at skin cancer detection. [Details](https://github.com
 Use pre-trained model from kaggle kernel. Git location can be found at https://github.com/vbookshelf/Skin-Lesion-Analyzer
 ## Application
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Before running this project on your own computer, install the requirments for this project first
+```
+npm i concurrently
+npm i react-router-dom
+npm i axios
+```
 
-To use this app, you need to use ### `npm run dev`, which will run server and client concurrently on your working environment
+* To use this app, you need to use ```npm run dev```, which will run server and client concurrently on your working environment
 
 In the [project directory](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/tree/master/WebApp), you can run:
 
