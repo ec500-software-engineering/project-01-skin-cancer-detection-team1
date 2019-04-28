@@ -5,7 +5,7 @@ Use pre-trained model from kaggle kernel. Git location can be found at https://g
 ## Application
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To use this app, you need to use:
+To use this app, you need to use: which will run server and client concurrently on your working environment
 ### `npm run dev`
 
 In the [project directory](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/tree/master/WebApp), you can run:
