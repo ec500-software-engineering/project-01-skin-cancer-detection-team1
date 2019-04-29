@@ -1,4 +1,5 @@
 module.exports = {
-  mongoURI: 'mongodb://ethan:Kevin0125@ds221115.mlab.com:21115/reactconnector',
-  secretOrKey: 'secret'
+  mongoURI:
+    "mongodb+srv://root:131215@cluster0-2anmc.mongodb.net/test?retryWrites=true",
+  secretOrKey: "secret"
 };
