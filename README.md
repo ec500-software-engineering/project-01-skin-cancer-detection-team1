@@ -4,6 +4,10 @@
 ## Brief Intro
 This repo is an application using ML function to do classification on images and detect whether it'll have features of skin cancer or not. Since we'd focus mainly on ML part last time, we may contribute more to application development this time. JS web page may included, the web page will be able to creat account and save patient's data to the data base. 
 
+You can see the final version of the diagram here:
+
+![image](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/blob/master/diagram.png)
+
 ## Installiation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Before running this project on your computer, install the requirments for this project first
