@@ -1,6 +1,5 @@
 # project-01-skin-cancer-detection-team1
-An web application aiming at skin cancer detection. [Details](https://github.com/ec500-software-engineering/project-01-skin-
-cancer-detection-team1/blob/master/Info.md)
+An web application aiming at skin cancer detection. [Details](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/blob/master/Info.md)
 
 ## How to Use
 
