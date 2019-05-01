@@ -17,6 +17,7 @@ You need to download [Node.js](https://nodejs.org/en/download/) to run following
 The root directory is WebApp, please run:
 ```
 cd WebApp
+rm -rf node_modules
 npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
 npm i concurrently
 npm i react-router-dom
