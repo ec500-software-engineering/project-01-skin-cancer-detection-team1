@@ -1,30 +1,83 @@
 import React, { Component } from "react";
-import ImageUploader from "react-images-upload";
+import axios from "axios";
 
 export default class Predict extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { pictures: [] };
-    this.onDrop = this.onDrop.bind(this);
+  constructor() {
+    super();
+    this.state = {
+      prediction: null,
+      path: null,
+      last: null
+    };
   }
 
-  onDrop(picture) {
-    this.setState({
-      pictures: this.state.pictures.concat(picture)
-    });
+  getBase64(file, cb) {
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function() {
+      cb(reader.result);
+    };
+    reader.onerror = function(error) {
+      console.log("Error: ", error);
+    };
   }
+
+  fileSelectedHandler = event => {
+    if (event.target.files[0].name !== this.state.last) {
+      const fname = event.target.files[0].name;
+      this.getBase64(event.target.files[0], result => {
+        const enc64 = result;
+        axios
+          .post("/api/upload", {
+            pic: enc64,
+            name: fname
+          })
+          .then(res => {
+            console.log("Path is " + res.data.path);
+            this.setState({
+              prediction: null,
+              path: res.data.path,
+              last: fname
+            });
+          })
+
+          .catch(err => {
+            console.log(err);
+          });
+      });
+    }
+  };
+
+  predict = () => {
+    if (this.state.path && !this.state.prediction) {
+      console.log("predict...");
+      axios
+        .post("/api/predict", { path: this.state.path })
+        .then(res => {
+          console.log(res.data.out);
+          this.setState({
+            prediction: res.data.out,
+            path: this.state.path,
+            last: this.state.last
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+  };
 
   render() {
     return (
       <div>
-        <ImageUploader
-          withIcon={true}
-          buttonText="Choose images"
-          onChange={this.onDrop}
-          imgExtension={[".jpg", ".gif", ".png", ".gif", ".bmp"]}
-          maxFileSize={5242880}
+        <input
+          type="file"
+          align="middle"
+          accept="image/jpg"
+          onChange={this.fileSelectedHandler}
         />
-        <h1 align="middle">Your result is</h1>
+        <div onClick={this.predict()} />
+        <h1 align="middle">Your result is {this.state.prediction}</h1>
       </div>
     );
   }

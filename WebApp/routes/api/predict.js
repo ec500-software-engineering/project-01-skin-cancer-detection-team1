@@ -1,8 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-const formidable = require("formidable");
-const fs = require("fs");
 // Predition stuffs
 const path = require("path");
 const { spawn } = require("child_process");
@@ -16,13 +14,19 @@ function runScript(input) {
 // @access  Public
 
 router.post("/", function(req, res) {
-  //console.log(req.body.path.toString());
-  const subprocess = runScript(req.body.path);
-  subprocess.stdout.on("data", function(data) {
-    while (!res.finished) {
-      res.json({ out: data.toString() });
-    }
-  });
+  if (req.body.path) {
+    console.log("[Server predict]" + req.body.path);
+    const subprocess = runScript(req.body.path);
+    subprocess.stdout.on("data", function(data) {
+      while (!res.finished) {
+        res.json({ out: data.toString() });
+      }
+    });
+  }
+});
+
+router.get("/", function(req, res) {
+  console.log("[Server predict] get from predict");
 });
 
 module.exports = router;
