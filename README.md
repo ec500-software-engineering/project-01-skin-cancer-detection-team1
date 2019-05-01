@@ -5,18 +5,32 @@ Use pre-trained model from kaggle kernel. Kaggle location can be found at https:
 
 ## Installiation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Before running this project on your own computer, install the requirments for this project first
+Before running this project on your computer, install the requirments for this project first
+You need to download [Node.js](https://nodejs.org/en/download/) to run following commands.
+### Backend
+The root directory is WebApp, please run:
 ```
+cd WebApp
+npm i express mongoose passport passport-jet jsonwebtoken body-parser bcryptjs validator
 npm i concurrently
 npm i react-router-dom
 npm i axios
 npm i atob
+```
+The above commands will let you meet the backend requirement.
+### Frontend
+Then run the following commands to install the backend:
+```
+cd client
+rm -rf node_modules
+npm install -l
 ```
 Atob: Transfer data from base64 to binary, which will be used latter for reconstruction of the image.
 
 Axios: Communication between backend and frontend
 
 Concurrently: For concurrently running your server and client concurrently
+### Run the app
 
 ### `npm run dev`
 
@@ -24,12 +38,7 @@ To use this app, you need to use this, which will run server and client concurre
 
 In the [project directory](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/tree/master/WebApp), you can run:
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
+Right now, the webpage is in the `http://localhost:3000`
 
 
 ## Brief Intro
