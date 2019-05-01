@@ -31,11 +31,11 @@ cd client
 rm -rf node_modules
 npm install -l
 ```
-Atob: Transfer data from base64 to binary, which will be used latter for reconstruction of the image.
+- Atob: Transfer data from base64 to binary, which will be used latter for reconstruction of the image.
 
-Axios: Communication between backend and frontend
+- Axios: Communication between backend and frontend
 
-Concurrently: For concurrently running your server and client concurrently
+- Concurrently: For concurrently running your server and client concurrently
 ### Run the app
 
 ### `npm run dev`
