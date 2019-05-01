@@ -9,9 +9,15 @@ Before running this project on your own computer, install the requirments for th
 npm i concurrently
 npm i react-router-dom
 npm i axios
+npm i atob
 ```
+Atob: Transfer data from base64 to binary, which will be used latter for reconstruction of the image.
+Axios: Communication between backend and frontend
+Concurrently: For concurrently running your server and client concurrently
 
-* To use this app, you need to use ```npm run dev```, which will run server and client concurrently on your working environment
+### `npm run dev`
+
+To use this app, you need to use this, which will run server and client concurrently on your working environment
 
 In the [project directory](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/tree/master/WebApp), you can run:
 
