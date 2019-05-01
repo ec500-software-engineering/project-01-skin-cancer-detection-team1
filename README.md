@@ -19,7 +19,7 @@ npm i atob
 ```
 The above commands will let you meet the backend requirement.
 ### Frontend
-Then run the following commands to install the backend:
+Then run the following commands to install the frontend:
 ```
 cd client
 rm -rf node_modules
