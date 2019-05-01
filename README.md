@@ -73,19 +73,9 @@ ISIC: https://www.isic-archive.com/#!/topWithHeader/onlyHeaderTop/gallery
 ## Model
 Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
 
-## References & Third-party Libraries
-Pandas: Dealing with .csv file
-
-Scikit-Image: Basic Image Processing
-
-Keras: ML Structures
-
 ## Challenges
-ML Part:
-- Body fur may cover and interfere with features on skin
-- Pics with low resolution
 
 Web Construction:
-- Deploy the webpage
-- Multiple requests from different client
-- Using cloud or database to save  the data
+- Deploy the webpage ( Not yet finished with that part )
+- Multiple requests from different client ( Using child-process to solve the problem. Each request will open a new process for python script. 
+- Using cloud or database to save the data ( MongoDB used in the end )
