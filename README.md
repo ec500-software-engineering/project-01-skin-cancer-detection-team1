@@ -1,13 +1,9 @@
 # project-01-skin-cancer-detection-team1
-An web application aiming at skin cancer detection. [Details](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/blob/master/Info.md)
-
-## How to Use
-
 
 ## Model
 Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
 
-## Application
+## Installiation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Before running this project on your own computer, install the requirments for this project first
 ```
