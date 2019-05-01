@@ -1,12 +1,14 @@
 # project-01-skin-cancer-detection-team1
 ![image](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/blob/master/webpage.png)
-## Model
-Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
+
+## Brief Intro
+This repo is an application using ML function to do classification on images and detect whether it'll have features of skin cancer or not. Since we'd focus mainly on ML part last time, we may contribute more to application development this time. JS web page may included, the web page will be able to creat account and save patient's data to the data base. 
 
 ## Installiation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Before running this project on your computer, install the requirments for this project first
 You need to download [Node.js](https://nodejs.org/en/download/) to run following commands.
+
 ### Backend
 The root directory is WebApp, please run:
 ```
@@ -40,10 +42,6 @@ In the [project directory](https://github.com/ec500-software-engineering/project
 
 Right now, the webpage is in the `http://localhost:3000`
 
-
-## Brief Intro
-This repo is an application using ML function to do classification on images and detect whether it'll have features of skin cancer or not. Since we'd focus mainly on ML part last time, we may contribute more to application development this time. JS web page may included, the web page will be able to creat account and save patient's data to the data base. 
-
 ## Project Intro
 Build an application that uses deep learning to detect skin cancer and based on probablitiy will connect or recommend a doctor to see.  For example, if it is high priority, recommend nearby dermotolgist.  if not, a general practicioner.  Also, the app should include videos based on the resutls to educate the user.
 For AI models, please research few models already implemented by researchers and are open sourced and use them.
@@ -68,6 +66,8 @@ Kaggle: https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
 
 ISIC: https://www.isic-archive.com/#!/topWithHeader/onlyHeaderTop/gallery
 
+## Model
+Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
 
 ## References & Third-party Libraries
 Pandas: Dealing with .csv file
