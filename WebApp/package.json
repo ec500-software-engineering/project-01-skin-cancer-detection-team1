@@ -1,7 +1,7 @@
 {
-  "name": "devconnector",
+  "name": "SkinCancerDetector",
   "version": "1.0.0",
-  "description": "Social network for developers",
+  "description": "A place for technical communication between doctors and patients",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -10,7 +10,7 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Brad Traversy",
+  "author": "Yicun Hou, Zifan Wang",
   "license": "MIT",
   "dependencies": {
     "atob": "^2.1.2",
