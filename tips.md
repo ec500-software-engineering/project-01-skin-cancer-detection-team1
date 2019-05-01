@@ -6,7 +6,8 @@ cancer-detection-team1/blob/master/Info.md)
 
 
 ## Model
-Use pre-trained model from kaggle kernel. Git location can be found at https://github.com/vbookshelf/Skin-Lesion-Analyzer
+Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
+
 ## Application
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Before running this project on your own computer, install the requirments for this project first
