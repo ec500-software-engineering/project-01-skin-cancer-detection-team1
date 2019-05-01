@@ -1,5 +1,5 @@
 # project-01-skin-cancer-detection-team1
-
+![image](https://github.com/ec500-software-engineering/project-01-skin-cancer-detection-team1/blob/master/webpage.png)
 ## Model
 Use pre-trained model from kaggle kernel. Kaggle location can be found at https://www.kaggle.com/sid321axn/step-wise-approach-cnn-model-77-0344-accuracy
 
